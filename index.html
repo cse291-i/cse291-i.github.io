@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>CSE291-I00: Machine Learning for 3D Data Home Page</title>
+
+	<link rel="stylesheet" type="text/css" href="cs468.css"></head><body>
+		<h1 align="center"><font color="#800000"> Machine Learning for 3D Data </font></h1>
+		<p></p><h2 align="center"><font color="#800000"> CSE291-I00 - Winter 2018</font></h2><p></p>
+		<br>
+        <!--
+        <table align="center">
+			<tbody><tr>
+				<td>&nbsp;</td>
+				<td><img src="pictures/Airplane_Eric.png" height="140"></td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td><img src="pictures/teaser_point_net.png" height="180"></td>
+			</tr>
+        </tbody></table>
+    -->
+        <br>
+        <br>
+        <div id="content">
+        <div class="underlinemenu">
+        <ul>
+        <li><a href="#announcements">Announcements</a></li>
+        <li><a href="#info">General Info</a></li>
+        <li><a href="#staff">Course Staff</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="schedule.html">Schedule &amp; Assignments</a></li>
+        <li><a href="https://piazza.com/class/jc2hphe6dff323">Piazza</a></li>
+        </ul>
+        </div>
+        <div class="underlinemenu"> </div>
+			<a name="announcements"></a>
+			<h3>Announcements</h3>
+			01/06/18:<br>
+			Welcome to the course! <br>
+			Please sign up with <a href="https://piazza.com/class/jc2hphe6dff323">Piazza
+			</a>
+		  <br>
+			<br>
+			<a name="info"></a>
+			<hr>
+			<h3>General Information</h3>
+			<strong>Times &amp; Places</strong>
+			<br>TuTh 3:30PM - 4:50PM, EBU3B 4140 <br><br>
+			<a name="staff"></a>
+			<strong>Course Staff</strong>
+              <table id="hor-minimalist-a" summary="Course Staff">
+                <thead>
+    	            <tr>
+       	                <th scope="col"><br>
+</th>
+        	            <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col"> Office Hours</th>
+                        <th scope="col">Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+    	            <tr>
+                      <td>Instructor</td>
+    	              <td>Hao Su</td>
+    	              <td>haosu@ucsd.edu </td>
+                      <td>2:00PM-3:00PM, Mo</td>
+                      <td>CSE Building 4114</td>
+                    </tr>
+                    <tr>
+                      <td>Course Assistant</td>
+    	              <td>Vignesh Gokul</td>
+    	              <td>vgokul@ucsd.edu </td>
+                        <td>5:00PM-6:30PM, MoFr</td>
+                        <td>CSE Building B250A</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+    	              <td></td>
+    	              <td></td>
+                        <td>6:00PM-7:30PM, We</td>
+                        <td>CSE Building B240A</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+			
+		    <h4>Objectives</h4>This
+course will explore the state of the art algorithms for both supervised and unsupervised machine learning on 3D data - analysis as well as
+synthesis. After a brief introduction to geometry foundations and representations, the focus of the course will be machine learning
+methods for 3D shape classification, segmentation, and symmetry detection, as well as new shape synthesis. Techniques for analyzing not
+only individual 3D models but entire collections of such through computing alignments, and maps or correspondences, will be discussed.
+Deep neural architectures appropriate for data in the form of point clouds or graphs will also be studied, as well as architectures that
+can associate semantic information with object models, including functionality. Finally generative models for 3D shape design will be
+covered, for example adaptations of generative adversarial networks (GANs). Data sources for the course include public 3D model
+repositories such a the Trimble 3D Warehouse or Yobi3D and semantic annotation knowledge bases such as ShapeNet. <br>
+<h4>Prerequisites</h4>
+Background assumed includes basic material in linear algebra, optimization, machine learning, and graphical models. 
+<br>
+
+<h4>Grading (tentative)</h4>
+<ul>
+<li>In-class quiz (~10 times)	10%</li>
+<li>Homeworks (4 assignments)	50% (distribution: 5%, 15%, 15%, 15%)</li>
+<li>Course project presentation 20%</li>
+<li>Course project writeup 20%</li>
+<li>Best paper award (Top 3): 10% bonus</li>
+<li>There will not be a final exam. </li>
+<li>7 late days in total with no penalty. </li>
+</ul>
+<br>			
+<h4>Syllabus</h4>
+The planned syllabus is as below. Certain contents may be added or removed based upon the interactions in class and other situations.
+<ul>
+<li>Introduction to Machine Learning and Deep Learning
+<ul>
+<li>Machine learning paradigm</li>
+<li>Optimization, Gradient Descent, Back Propagation</li> 
+<li>Linear Classifier, k-NN Classifier</li>
+<li>Multi-layer Perceptron, Convolutional Neural Network (CNN)</li>
+<li>Why deep learning is more effective?</li>
+<li>Non-convex Optimization Issues in Deep Learning</li>
+</ul>
+</li>
+
+<li>Shape Representation, Geometry Parameterization, Machine Learning on Extrinsic Geometry
+<ul>
+<li>Multi-view Representation, the Novel-view Synthesis Problem</li>
+<li>Volumetric Representation, 3D CNN</li>
+<li>Parametric Representation of Surfaces, Differential Geometry</li>
+<li>Point Cloud Representation, EMD, PointNet</li>
+<li>Shape Grammar, Procedural Modeling</li>
+</ul></li>
+
+<li>Simulation for Learning
+<ul>
+<li>Render for CNN</li>
+<li>Domain Adaptation, GAN</li>
+<li>Intuitive Physics</li>
+</ul>
+
+</li>
+<li>Graph Laplacian, Intrinsic Geometry
+<ul>
+<li>Spectral Graph Theory</li>
+<li>Extrinsic vs Intrinsic Geometry</li>
+<li>Laplacian-Bertrami operator</li>
+<li>Heat Kernel and Wave Kernel signatures</li>
+<li>Graph CNNs, Deep Learning on Manifolds</li> 
+</ul>
+</li>
+
+<li>Map Networks
+<ul>
+<li>Rigid and Non-rigid Shape Registration</li>
+<li>Functional Map, Canonical Correlation Analysis</li>
+<li>Cycle Consistency</li>
+<li>Functional Map Network, Deep Functional Map Network</li>
+<li>Unsupervised Learning by Map Networks, Cycle GAN</li>
+<li>Map Networks on Shape Parts</li>
+<li>Map Networks across Data Domains (Image Captioning, Joint Image-Shape Networks)</li>
+</ul>
+</li>
+
+<li>Topological Data Analysis
+<ul>
+<li>Topology Review, Complexes</li>
+<li>Homology Groups, Persistent Homology</li>
+</ul>
+</li>
+
+<li>Open Problems in Shape Understanding</li>
+
+<hr>
+
+<!--
+<h4>Acknowledgements</h4>		
+Many of the lectures are based on the lecture slides from:
+<ul>
+<li><a href="http://graphics.stanford.edu/courses/cs468-17-spring/">CS468: Machine Learning on 3D Data</a></li>
+<li><a href="http://cs233.stanford.edu/">CS233: Geometrical and Topological Data Analysis</a></li>
+<li><a href="http://cs231n.stanford.edu/">CS231n: Convolutional Neural Networks for Visual Recognition</a></li>
+<li><a href="http://people.cs.umass.edu/%7Ekalo/datadrivenshape/">Data Driven Shape Analysis and Processing</a></li>
+</ul>
+We would like to thank all authors for sharing their resources.
+-->
+</div>
+</body></html>
